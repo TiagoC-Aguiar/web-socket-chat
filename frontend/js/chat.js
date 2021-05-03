@@ -58,7 +58,7 @@ function fetchAll() {
         let usersTemplateHTML = "";
         for (let i = 0; i < users.length; i++) {
             usersTemplateHTML = usersTemplateHTML + '<a href="#" onclick="selectUser(\'' + users[i] + '\')"><li class="clearfix">\n' +
-                '                <img src="https://rtfm.co.ua/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" width="55px" height="55px" alt="avatar" />\n' +
+                '                <img src="https://img.favpng.com/25/13/19/samsung-galaxy-a8-a8-user-login-telephone-avatar-png-favpng-dqKEPfX7hPbc6SMVUCteANKwj.jpg" width="55px" height="55px" alt="avatar" />\n' +
                 '                <div class="about">\n' +
                 '                    <div id="userNameAppender_' + users[i] + '" class="name">' + users[i] + '</div>\n' +
                 '                    <div class="status">\n' +
