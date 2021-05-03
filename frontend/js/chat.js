@@ -4,7 +4,7 @@ let selectedUser;
 let newMessages = new Map();
 
 function connectToChat(userName) {
-    console.log("connecting to chat...")
+    console.log("connecting to chat...");
     let socket = new SockJS(url + '/chat');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
@@ -22,7 +22,7 @@ function connectToChat(userName) {
 }
 
 function sendMsg(from, text) {
-    stompClient.send("/app/chat/" + selectedUser, {}, JSON.stringify({
+    stompClient.send("/app/chat/" + selectedUser, {}, JSON.stringify({    
         fromLogin: from,
         message: text
     }));
